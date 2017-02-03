@@ -107,7 +107,7 @@ elif (start == "s"):
 
 	else:
 		print "Maybe another time you will want to complete the bonus question!"
-		print "Percentage:", (str(score)/8)
+		print "Score:", str(score)
 
 else:
 	print "Whoops...", str(start), "is an invalid key"
