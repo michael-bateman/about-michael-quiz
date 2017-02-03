@@ -10,6 +10,7 @@ I made this quiz in about 10 minutes with Python.  It is very simple to use.
 ## Modules
 Please note to run this program, you will need the following modules:
 * [Sys](https://docs.python.org/2/library/sys.html) - This is used to exit the game.
+* [Time](https://docs.python.org/2/library/time.html) - This is used at the beginning for a delay between when the title is seen and the instructions.
 
 
 ## How to use
