@@ -5,7 +5,7 @@ The goal of writing this program was for my grade 9 computer science class as a 
 ## Goal
 Since this was assigned as homework, the goal of the homework was to make an "adventure game' however, I made a quiz instead.  We were required to use `raw_input()`.  More information on that can be found on [the Python built in function documentation](https://docs.python.org/2/library/functions.html#raw_input).
 
-For viewing, you can find the code [here](https://github.com/michael-bateman/about-michael-quiz/edit/master/INSTRUCTIONS.md#code) or you can clone the repository by following [these instructions](https://github.com/michael-bateman/about-michael-quiz/edit/master/INSTRUCTIONS.md#clonetherepository).
+For viewing, you can find the code [here](https://github.com/michael-bateman/about-michael-quiz/blob/master/INSTRUCTIONS.md#code) or you can clone the repository by following [these instructions](https://github.com/michael-bateman/about-michael-quiz/blob/master/INSTRUCTIONS.md#clone-the-repository).
 
 ## Clone the repository
 You can clone the repository if you have [Git](https://git-scm.com) installed.
