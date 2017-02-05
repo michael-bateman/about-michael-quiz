@@ -2,18 +2,63 @@
 ## Background
 The goal of writing this program was for my grade 9 computer science class as a homework task.
 
-## Goal
-Since this was assigned as homework, the goal of the homework was to make an "adventure game' however, I made a quiz instead.  We were required to use `raw_input()`.  More information on that can be found on [the Python built in function documentation](https://docs.python.org/2/library/functions.html#raw_input).
+## What it does
+This program is a simple Python code that is a 5 question plus a bonus question quiz about Michael.
 
+## Goal
+Since this was assigned as homework, the goal of the homework was to make an "adventure game' however, I made a quiz instead.  We were required to use `raw_input()`, `if` statements and [ASCII art](https://en.wikipedia.org/wiki/ASCII_art).  More information on that can be found on [the Python built in function documentation](https://docs.python.org/2/library/functions.html#raw_input).
+
+### `raw_input()`
+I used this in my code specifically when choosing multiple choice answers.  I would use the following to see what someone's answer is.
+```python
+# Assume we have a multiple choice question, and the answer is 'a'
+qanswer = raw_input()
+qanswer = qanswer.lower() # This changes their response from capitals to lowercase.
+# Then I would use if statements to check their answer
+```
+
+### `if` statements
+I used `if` statements to check if the person taking my quiz was answered correctly.
+```python
+# Assume we have already used raw_input() and the result was 'a'
+# We would then change their answer to lowercase.
+# I used a while loop to make sure if they put an answer that was not included, they would be asked about the question again.
+qtrue = True # Note - '=' means assign and '==' is to check.
+while (qtrue == True): # Python uses uppercase 'T' and 'F' but most other languages use lowercase.
+	# INSERT QUESTION HERE!
+	if (qanswer == "a"):
+		score = score + 1
+		qtrue = False # Changes to False, so not asked again
+		print "Correct!"
+	elif (qanswer == "b" or qanswer == "c" or qanswer == "d"):
+		qtrue = False # Changes to False, so not asked again
+		print "Wrong!"
+	else:
+		"Not a valid selection" # This does not change to false, so it asks the question agian
+```
+
+### Ascii Art
+The Ascii art is used for basic things in computer programs and the art is made up of keyboard charecters.  I found a way to write in a plain text file so you do not need to print each line at a time.
+```python
+# Make sure you pasted your Ascii art in a plain text file.
+file = open("<filename>.txt","r") # The <filename>.txt has the art in it.  We type 'r' to read the file.
+print file.read(1-100) # Now we print the lines, and in this case it's lines 1 - 100
+file.close() # We close the file
+```
+Using this method, we no longer need to go through each line in out program and type `print "/\"` so it makes it a lot easier!
+
+You can learn more about Ascii art on Wikipedia by visiting: [https://en.wikipedia.org/wiki/ASCII_art](https://en.wikipedia.org/wiki/ASCII_art)
+
+## Setup instructions
 For viewing, you can find the code [here](https://github.com/michael-bateman/about-michael-quiz/blob/master/INSTRUCTIONS.md#code) or you can clone the repository by following [these instructions](https://github.com/michael-bateman/about-michael-quiz/blob/master/INSTRUCTIONS.md#clone-the-repository).
 
-## Clone the repository
+### Clone the repository
 You can clone the repository if you have [Git](https://git-scm.com) installed.
 ```bash
 $ clone https://github.com/michael-bateman/about-michael-quiz.git
 ```
 
-## How to run the file
+### How to run the file
 Make sure you have cloned the repository.  If you have not, follow the instructions above.
 Navigate to the directory:
 ```bash
@@ -24,9 +69,6 @@ Run the file:
 $ python survey.py
 ```
 Done! It should now run.
-
-## What it does
-This program is a simple Python code that is a 5 question plus a bonus question quiz about Michael.
 
 ## Imports
 This program uses modules to a minimum.  In fact, it is possible to use the program without modules at all!  They just put a nice touch on the game.  The following modules were used:
