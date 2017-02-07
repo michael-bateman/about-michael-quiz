@@ -10,15 +10,18 @@ import random
 
 # functions
 
+def openPicture():
+	file = open("images/1.txt","r")
+	print file.read(1-100)
+	file.close()
+
+	file = open("images/2.txt","r")
+	print file.read(1-100)
+	file.close()
+
 # main code
 
-file = open("images/1.txt","r")
-print file.read(1-100)
-file.close()
-
-file = open("images/2.txt","r")
-print file.read(1-100)
-file.close()
+openPicture()
 
 time.sleep(5)
 
@@ -166,24 +169,17 @@ while (inc == True):
 				date = time.strftime("%d/%m/%Y")
 				time = time.strftime("%H:%M:%S")
 
-				file = open("../results.txt","w")
-				file.write("Name: ")
-				file.write(str(name))
-				file.write(" Date: ")
-				file.write(str(date))
-				file.write(str(time))
-				file.write(" Game # ")
-				file.write(str(gameno))
-				file.write(" Score: ")
-				file.write(str(score))
+				file = open("results-" + str(name) + ".txt","w")
+				file.write("Name: " + str(name) + "   Date: " + str(date) + " " + str(time) + "   Game # " + str(gameno) + "   Score: " + str(score))
 				file.close()
-				print "Your score has been saved in a file called 'results.txt'."
+				print "Your score has been saved in a file called 'results.txt-" + str(name) + "'."
 				savefalse = False
 			elif (save == "b"):
 				print "Have a good day! Goodbye"
 				savefalse = False
 			else:
 				print "Invalid selection.  Please try again."
+				print ""
 
 	else:
 		print "Whoops...", str(start), "is an invalid key"
