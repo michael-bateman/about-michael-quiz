@@ -11,7 +11,7 @@ For those who might not have much experience using Git, please follow these simp
 Otherwise, follow this:
 - Clone the repository
 ```bash
-$ clone https://github.com/michael-bateman/about-michael-quiz.git
+$ git clone https://github.com/michael-bateman/about-michael-quiz.git
 ```
 - Then enter the directory
 ```bash
