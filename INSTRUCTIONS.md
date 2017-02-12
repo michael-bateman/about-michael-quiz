@@ -55,7 +55,7 @@ For viewing, you can find the code [here](https://github.com/michael-bateman/abo
 ### Clone the repository
 You can clone the repository if you have [Git](https://git-scm.com) installed.
 ```bash
-$ clone https://github.com/michael-bateman/about-michael-quiz.git
+$ git clone https://github.com/michael-bateman/about-michael-quiz.git
 ```
 
 ### How to run the file
@@ -104,6 +104,8 @@ gameno = random.randint(0,9999999999)
 
 ## Code
 For those who want to see the code and don't want to download anything, it is listed below.
+
+*__Note:__ The code listed below has not been updated.  A updated version should be avalible shortly.  For now to see the updated version please open the `.py` file which is located in the root of this repository.*
 ```python
 '''
 survey.py - Michael Bateman
